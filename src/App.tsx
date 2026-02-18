@@ -63,7 +63,7 @@ function App() {
 
                     {activeTab === 'about' && (
                         <div className="animate-in fade-in duration-500 text-zinc-400">
-                            Здесь будет информация о твоем опыте на фрилансе...
+                            Здесь будет информация обо мне...
                         </div>
                     )}
                 </section>
