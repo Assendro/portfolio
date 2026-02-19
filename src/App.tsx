@@ -5,7 +5,7 @@ import ProjectCard from './components/ProjectCard';
 type TabId = 'projects' | 'skills' | 'about' | 'commercial' | 'experience';
 
 function App() {
-    const [activeTab, setActiveTab] = useState<TabId>('projects');
+    const [activeTab, setActiveTab] = useState<TabId>('commercial');
 
     return (
         <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-sky-500/30">
@@ -110,7 +110,9 @@ function App() {
 
                     {activeTab === 'about' && (
                         <div className="animate-in fade-in duration-500 text-zinc-400">
-                            Здесь будет информация обо мне...
+                            Я начинающий Frontend-разработчик, самоучка. Занимаюсь web разработкой с 2021-го года. Больше всего обожаю React компоненты и автоматизацию в целом.
+                            <br /><br />
+                            Живу в Москве.
                         </div>
                     )}
                 </section>
