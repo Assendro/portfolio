@@ -114,6 +114,7 @@ function App() {
                                 <button className="p-3 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-center cursor-pointer">MySQL</button>
                                 <button className="p-3 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-center cursor-pointer">ClickHouse</button>
                                 <button className="p-3 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-center cursor-pointer">Metabase</button>
+                                <button className="p-3 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-center cursor-pointer">Strapi</button>
                                 <button className="p-3 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-center cursor-pointer">API</button>
                                 <button className="p-3 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-center cursor-pointer">git</button>
                                 <button className="p-3 rounded-2xl border border-zinc-800 bg-zinc-900/30 text-center cursor-pointer">JSON</button>
