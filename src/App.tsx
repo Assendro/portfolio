@@ -53,7 +53,7 @@ function App() {
                             <ProjectCard
                                 title="Resume website"
                                 description="Сайт, который выступает альтернативой резюме. В нём собранны все мои работы, указаны мои навыки и немного рассказано обо мне."
-                                stack={['HTML', 'React', 'Tailwind', 'TypeScript']}
+                                stack={['HTML', 'React', 'Tailwind', 'TypeScript', 'Vite']}
                                 link="https://portfolio-one-topaz-k0d5rsqkdz.vercel.app/"
                             />
                             <ProjectCard
@@ -82,6 +82,11 @@ function App() {
                                 companyName="QQ Coffee"
                                 jobTitle="Fullstack-разработчик"
                                 timePeriod={'Ноябрь 2025 — Декабрь 2025'}
+                            />
+                            <ExperienceCard
+                                companyName="klum-ba.ru"
+                                jobTitle="Frontend-разработчик"
+                                timePeriod={'Апрель 2025 — Октябрь 2025'}
                             />
                             <ExperienceCard
                                 companyName="Retail Rocket"
