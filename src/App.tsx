@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Tabs from './components/Tabs';
 import ProjectCard from './components/ProjectCard';
+import ExperienceCard from './components/ExperienceCard';
 
 type TabId = 'projects' | 'skills' | 'about' | 'commercial' | 'experience';
 
@@ -41,7 +42,7 @@ function App() {
                         <div className="animate-in fade-in duration-500">
                             <ProjectCard
                                 title="klum-ba.ru"
-                                description="Разработка фронтенд-части. Реализовал адаптивную верстку, интеграцию с API."
+                                description="Разработка фронтенд-части всего сайта по дизайну в figma. Реализовал адаптивную верстку, интеграцию с API."
                                 stack={['HTML', 'JavaScript', 'CSS']}
                                 link="https://klum-ba.ru/"
                             />
@@ -77,6 +78,16 @@ function App() {
                     )}
                     {activeTab === 'experience' && (
                         <div className="animate-in fade-in duration-500">
+                            <ExperienceCard
+                                companyName="QQ Coffee"
+                                jobTitle="Fullstack-разработчик"
+                                timePeriod={'Ноябрь 2025 — Декабрь 2025'}
+                            />
+                            <ExperienceCard
+                                companyName="Retail Rocket"
+                                jobTitle="Старший специалист технической поддержки"
+                                timePeriod={'Февраль 2022 — Июнь 2023'}
+                            />
                         </div>
                     )}
 
