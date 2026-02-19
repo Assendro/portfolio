@@ -1,6 +1,6 @@
 import React from 'react';
 
-type TabId = 'projects' | 'skills' | 'about';
+type TabId = 'projects' | 'skills' | 'about' | 'commercial' | 'experience';
 
 interface TabsProps {
     activeTab: TabId;
@@ -9,7 +9,9 @@ interface TabsProps {
 
 const Tabs: React.FC<TabsProps> = ({ activeTab, setActiveTab }) => {
     const tabs: { id: TabId; label: string }[] = [
+        { id: 'commercial', label: 'Коммерческие проекты' },
         { id: 'projects', label: 'Pet проекты' },
+        { id: 'experience', label: 'Опыт работы' },
         { id: 'skills', label: 'Навыки' },
         { id: 'about', label: 'Обо мне' },
     ];
@@ -22,12 +24,12 @@ const Tabs: React.FC<TabsProps> = ({ activeTab, setActiveTab }) => {
                     <button
                         key={tab.id}
                         onClick={() => setActiveTab(tab.id)}
-                        className={`relative text-sm font-bold uppercase tracking-widest transition-all ${activeTab === tab.id ? 'text-sky-400' : 'text-zinc-500 hover:text-zinc-300'
+                        className={`relative text-sm font-bold uppercase tracking-widest transition-all cursor-pointer ${activeTab === tab.id ? 'text-sky-400' : 'text-zinc-500 hover:text-zinc-300'
                             }`}
                     >
                         {tab.label}
                         {activeTab === tab.id && (
-                            <div className="absolute -bottom-[17px] left-0 h-[2px] w-full bg-sky-400 shadow-[0_0_12px_rgba(56,189,248,0.4)]" />
+                            <div className="absolute -bottom-[17px] left-0 h-[2px] w-full bg-sky-400 shadow-[0_0_12px_rgba(56,189,248,0.4)] cursor-default" />
                         )}
                     </button>
                 ))}

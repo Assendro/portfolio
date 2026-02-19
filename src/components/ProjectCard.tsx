@@ -20,9 +20,9 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, stack, link }
                 <p className="text-zinc-400 text-sm leading-relaxed mb-6">
                     {description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-3">
                     {stack.map((tech) => (
-                        <span key={tech} className="rounded-md bg-zinc-800 px-2 py-1 text-xs text-zinc-300 font-mono">
+                        <span key={tech} className="rounded-md bg-zinc-800 p-2 text-xs text-zinc-300 font-mono">
                             {tech}
                         </span>
                     ))}
