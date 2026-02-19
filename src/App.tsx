@@ -57,19 +57,19 @@ function App() {
                             />
                             <ProjectCard
                                 title="Rouge-game"
-                                description="Разработка фронтенд-части. Реализовал адаптивную верстку, интеграцию с API."
+                                description="Небольшая rouge-like игра."
                                 stack={['HTML', 'JavaScript', 'CSS']}
                                 link="https://assendro.github.io/Rouge-game1.1/"
                             />
                             <ProjectCard
                                 title="Arena"
-                                description="Разработка фронтенд-части. Реализовал адаптивную верстку, интеграцию с API."
+                                description="Заготовка для игры 1 на 1 с одного компьютера. Управление wasd + R и стрелочки + num5"
                                 stack={['React', 'HTML', 'JavaScript', 'CSS']}
                                 link="https://assendro.github.io/AssendroArena/"
                             />
                             <ProjectCard
                                 title="TowerDefense"
-                                description="Разработка фронтенд-части. Реализовал адаптивную верстку, интеграцию с API."
+                                description="Небольшая игра из 1го бесконечного уровня в стиле tower defense"
                                 stack={['HTML', 'JavaScript', 'CSS']}
                                 link="https://assendro.github.io/AssendroTD/"
                             />
